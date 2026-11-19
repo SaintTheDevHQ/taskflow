@@ -1,0 +1,161 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f6f9;
+  color: #333;
+  padding: 30px 15px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+header h1 {
+  color: #2563eb;
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+
+header p {
+  color: #666;
+}
+
+main {
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+section {
+  background-color: #fff;
+  padding: 25px;
+  margin-bottom: 25px;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+}
+
+h2 {
+  font-size: 20px;
+  margin-bottom: 18px;
+}
+
+#task-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 7px;
+  font-size: 15px;
+}
+
+button {
+  padding: 12px;
+  border: none;
+  border-radius: 7px;
+  background-color: #2563eb;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1d4ed8;
+}
+
+.task-filters {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.task-filters button {
+  flex: 1;
+  background-color: #e5e7eb;
+  color: #333;
+}
+
+.task-filters button:hover {
+  background-color: #d1d5db;
+}
+
+#tasks-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+@media (max-width: 480px) {
+  section {
+    padding: 18px;
+  }
+
+  .task-filters {
+    gap: 6px;
+  }
+
+  .task-filters button {
+    font-size: 13px;
+    padding: 10px 5px;
+  }
+}
+
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 15px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+}
+
+.task-item h3 {
+  font-size: 15px;
+  font-weight: 500;
+  overflow-wrap: anywhere;
+}
+
+.task-item span {
+  font-size: 12px;
+  padding: 5px 9px;
+  border-radius: 20px;
+  text-transform: capitalize;
+}
+
+.high {
+  background-color: #fee2e2;
+  color: #dc2626;
+}
+
+.medium {
+  background-color: #fef3c7;
+  color: #d97706;
+}
+
+.low {
+  background-color: #dcfce7;
+  color: #16a34a;
+}
+
+.delete-btn {
+  background-color: #dc2626;
+  padding: 7px 12px;
+  font-size: 12px;
+}
+
+.delete-btn:hover {
+  background-color: #b91c1c;
+}

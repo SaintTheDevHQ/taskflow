@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TaskFlow - To-Do List</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>TaskFlow</h1>
+    <p>Organize your day, one task at a time.</p>
+  </header>
+
+  <main>
+    <section class="task-input">
+      <h2>Add a New Task</h2>
+
+      <form id="task-form">
+        <input
+          type="text"
+          id="task-input"
+          placeholder="Enter your task..."
+          required
+        >
+
+        <select id="task-priority">
+          <option value="low">Low Priority</option>
+          <option value="medium">Medium Priority</option>
+          <option value="high">High Priority</option>
+        </select>
+
+        <button type="submit">Add Task</button>
+      </form>
+    </section>
+
+    <section class="task-list">
+      <h2>My Tasks</h2>
+
+      <div class="task-filters">
+        <button type="button">All</button>
+        <button type="button">Pending</button>
+        <button type="button">Completed</button>
+      </div>
+
+      <div id="tasks-container">
+        <!-- Tasks will appear here -->
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
