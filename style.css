@@ -159,3 +159,18 @@ button:hover {
 .delete-btn:hover {
   background-color: #b91c1c;
 }
+
+.complete-btn {
+  background-color: #16a34a;
+  padding: 7px 12px;
+  font-size: 12px;
+}
+
+.complete-btn:hover {
+  background-color: #15803d;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #999;
+}
