@@ -41,6 +41,18 @@ completeButton.addEventListener('click', function() {
   }
   });
 
+  const editButton = document.createElement('button');
+  editButton.textContent = 'Edit';
+  editButton.classList.add('edit-btn');
+
+  editButton.addEventListener('click', function() {
+  const newTaskName = prompt('Edit your task:', taskTitle.textContent);
+
+  if (newTaskName !== null && newTaskName.trim() !== '') {
+    taskTitle.textContent = newTaskName;
+  }
+});
+
  
   const deleteButton = document.createElement('button');
   deleteButton.textContent = 'Delete';
@@ -55,6 +67,7 @@ completeButton.addEventListener('click', function() {
   task.appendChild(taskLevel);
   task.appendChild(completeButton);
   task.appendChild(deleteButton);
+  task.appendChild(editButton);
 
   
   tasksContainer.appendChild(task);
